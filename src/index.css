@@ -1,0 +1,230 @@
+/* 🌌 Body - Dark Themed Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🔹 Container */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🌟 Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #00ccff; /* Neon Sky Blue */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 🚀 Navigation Bar */
+.navbar {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #00ccff;
+  box-shadow: 0px 4px 10px rgba(0, 204, 255, 0.5);
+}
+
+/* Centering Navbar Links */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Navbar Items */
+.navbar ul li {
+  display: inline-block;
+}
+
+/* Navbar Links */
+.navbar ul li a {
+  text-decoration: none;
+  color: #00ccff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover & Active Effect */
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #00ccff;
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.8);
+}
+
+/* 📦 Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #00ccff;
+  color: white;
+}
+
+th {
+  background-color: #00ccff;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background-color: rgba(0, 204, 255, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+/* 🔘 Buttons - Glowing Sky Blue */
+button {
+  background: linear-gradient(45deg, #0078ff, #00ccff);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 204, 255, 0.5);
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: white;
+  color: #00ccff;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.8);
+}
+
+/* 📝 Forms - Glassmorphism */
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 4px 10px rgba(0, 204, 255, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #00ccff;
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+select {
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  color: white; /* White text */
+  border: 1px solid #00ccff; /* Neon border */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  appearance: none; /* Remove default OS styling */
+}
+
+select option {
+  background-color: rgba(0, 0, 0, 0.9); /* Dark background for options */
+  color: white; /* White text */
+  padding: 10px;
+}
+
+/* Remove default dropdown arrow in some browsers */
+select::-ms-expand {
+  display: none;
+}
+
+
+select:focus, input:focus {
+  outline: none;
+  border: 2px solid white;
+}
+
+/* 📦 Order & Forms Container */
+.orders-container, .place-order-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 8px rgba(0, 204, 255, 0.25);
+}
+
+/* 🏗️ Form Layout */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  /* Responsive Navbar */
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar ul li {
+    display: block;
+  }
+
+  .navbar ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🌟 Neon Container */
+.container1 {
+  background-color: rgba(0, 0, 0, 0.85); /* Dark background */
+  border: 2px solid #00e6ff; /* Neon sky blue border */
+  border-radius: 10px;
+  padding: 30px;
+  width: 50%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0px 0px 15px #00e6ff; /* Neon glow */
+  text-align: center;
+  color: white;
+}
